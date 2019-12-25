@@ -1,0 +1,4 @@
+- Create a stack class.
+It should work on LIFO principle.
+Items will be added to the top of the stack
+Item deletion will happen from the top of the stack.

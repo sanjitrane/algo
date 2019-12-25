@@ -1,0 +1,16 @@
+- Creates a class instance to represent a node.  The node should
+have three properties, 'data', 'prev' and 'next'.  Accept these as arguments to the 'Node' constructor, then
+assign them to the instance as properties 'data', 'prev' and 'next'.
+If 'next' is not provided to the constructor, then default its
+value to be 'null'.
+If 'prev' is not provided to the constructor, then default its value to be 'null'.
+
+- Push -  Adds node at the end of the list
+- Pop - Remove node at the end of the list
+- Shift - Removes node at the start of the list
+- Unshift - Adds node at the start of the list
+- Get - Get the node value at a specific position
+- Set - Change node value at a specific position
+- Insert - Insert node at a specific position
+- Remove - Removes a node at a specific position
+- Reverse - Reverses the given list. The head becomes the tail and the tail becomes the head. The next value also changes. 

@@ -1,0 +1,5 @@
+Binary Search trees
+-  Sorted Values
+- Big O notation:
+ - Insertion: O(log n)
+ - Searching: O(log n)
