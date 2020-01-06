@@ -139,6 +139,20 @@ class SingleList{
         }
         return this;
     }
+
+    rotate(n){
+        if(!this.head) return null;
+        if(n === 0) return this;
+        let currentHead = this.head;
+        let currentTail = this.tail;
+        let newHead = this.get(n);
+        let newTail = this.get(n - 1);
+        this.head = newHead;
+        currentTail.next = currentHead;
+        this.tail = newTail;
+        newTail.next = null;
+        return this;
+    }
 }
 
 module.exports = {Node, SingleList}
