@@ -169,11 +169,11 @@ describe("Reverse", ()=>{
 describe("Rotate", ()=>{
     test("Rotates a list as per the number passed", ()=>{
         let l = new SingleList()
-        l.push(1).push(2).push(3).push(4).push(5);
-        l.rotate(2);
-        expect(l.head.data).toEqual(3);
-        expect(l.head.next.data).toEqual(4);
-        expect(l.tail.data).toEqual(2);
+        l.push(5).push(10).push(15).push(20).push(25);
+        l.rotate(3);
+        expect(l.head.data).toEqual(20);
+        expect(l.head.next.data).toEqual(25);
+        expect(l.tail.data).toEqual(15);
         console.log('Rotate', l)
     })
 })

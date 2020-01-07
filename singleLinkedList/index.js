@@ -142,11 +142,19 @@ class SingleList{
 
     rotate(n){
         if(!this.head) return null;
+            n = (n % this.length);
+        
         if(n === 0) return this;
         let currentHead = this.head;
         let currentTail = this.tail;
-        let newHead = this.get(n);
-        let newTail = this.get(n - 1);
+        let newHead, newTail
+        if(n < 0){
+            newHead = this.get(this.length + n)
+            newTail = this.get(this.length + n - 1)
+        }else{
+            newHead = this.get(n);
+            newTail = this.get(n - 1);
+        }
         this.head = newHead;
         currentTail.next = currentHead;
         this.tail = newTail;
